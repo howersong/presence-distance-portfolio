@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10110f" />
+    <meta name="color-scheme" content="dark light" />
+    <meta
+      name="description"
+      content="在场与远方：一组关于光、海岸、城市、人与远方的摄影作品。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="在场与远方 — 摄影作品集" />
+    <meta
+      property="og:description"
+      content="一组关于光、海岸、城市、人与远方的摄影作品。"
+    />
+    <meta property="og:image" content="./public/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="在场与远方 — 摄影作品集" />
+    <meta
+      name="twitter:description"
+      content="一组关于光、海岸、城市、人与远方的摄影作品。"
+    />
+    <meta name="twitter:image" content="./public/og.png" />
+    <title>在场与远方 — 摄影作品集</title>
+    <link
+      rel="preload"
+      as="image"
+      href="./public/photographs/digital-01.webp"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#work">跳到作品</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="回到顶部">P / D</a>
+      <nav aria-label="主导航">
+        <a href="#work">作品</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="./public/photographs/digital-01.webp"
+            alt="夕阳下，一排鸟停在路灯的剪影上"
+          />
+          <span class="image-index">01 / 44</span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Photography portfolio · 2024—2026</p>
+          <h1 id="hero-title">在场与远方</h1>
+          <p class="hero-subtitle">Presence, Distance</p>
+          <a class="scroll-cue" href="#about">
+            向下观看 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="artist-note" id="about">
+        <p class="section-kicker">Artist note</p>
+        <div class="artist-copy">
+          <h2>观看，是一种靠近。</h2>
+          <p>
+            这些影像往返于城市、海岸与远方之间。镜头不急于解释，只保存光的温度、人的尺度，以及擦肩而过的片刻。
+          </p>
+          <p class="artist-copy-en">
+            Moving between cities, coastlines and distant forms, these photographs hold space for light, scale and brief encounters.
+          </p>
+        </div>
+        <p class="work-count"><span>44</span> photographs</p>
+      </section>
+
+      <section class="chapter-map" aria-labelledby="chapter-map-title">
+        <p class="section-kicker" id="chapter-map-title">Five chapters</p>
+        <ol>
+          <li><a href="#light"><span>01</span> 光的温度</a></li>
+          <li><a href="#coast"><span>02</span> 海岸与留白</a></li>
+          <li><a href="#human"><span>03</span> 人的尺度</a></li>
+          <li><a href="#city"><span>04</span> 城市在移动</a></li>
+          <li><a href="#distance"><span>05</span> 远方的地形</a></li>
+        </ol>
+      </section>
+
+      <section id="work" aria-label="摄影作品">
+        <div id="chapters"></div>
+        <noscript>
+          <p class="noscript">请启用 JavaScript 以查看完整的 44 幅摄影作品。</p>
+        </noscript>
+      </section>
+
+      <section class="closing">
+        <p class="section-kicker">Presence, Distance</p>
+        <p class="closing-line">远方并不遥远，<br />它只是尚未被仔细观看。</p>
+        <p class="closing-en">Distance begins with attention.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>在场与远方</p>
+      <p>Photography portfolio · 2024—2026</p>
+      <a href="#top">回到顶部 ↑</a>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="作品大图预览">
+      <button class="lightbox-close" type="button" aria-label="关闭预览">关闭 ×</button>
+      <div class="lightbox-stage">
+        <img src="" alt="" />
+        <p></p>
+      </div>
+    </dialog>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
